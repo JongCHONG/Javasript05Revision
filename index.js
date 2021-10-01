@@ -64,7 +64,7 @@ checkPal("racecar")
 saut2ligne()
 
 //04 - Swap
-console.log("03 - Swap \n")
+console.log("04 - Swap \n")
 
 function swap(str) {
     var result = 0
@@ -84,3 +84,23 @@ function swap(str) {
 }
 swap("Hello World")
 saut2ligne()
+
+//Bonus
+console.log("Bonus \n")
+
+function makeItSpongeBob(str) {
+
+    var mini = str.toLowerCase()
+    var bob = ""
+
+    for (var i = 0; i < mini.length; i++) {
+        if (i % 2 == 0){
+            bob = bob + mini[i].toUpperCase()
+        } else {
+            bob = bob + mini[i]
+        }
+        console.log(i)
+    }
+    console.log(bob)
+}
+makeItSpongeBob("jZieE")
