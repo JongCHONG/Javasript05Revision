@@ -34,8 +34,30 @@ function countEach(str) {
         console.log(false)
     }
 }
-countEach("xxxoooox")
-countEach("xox")
+countEach("xxxooooxox")
+countEach("xoxoo")
 saut2ligne()
 
 //03 - Palindrome
+console.log("03 - Palindrome \n")
+
+function checkPal(str) {
+    var i = 0
+    var length = str.length - 1
+    var palindrome = true
+    
+    while ( i < str.length / 2) {
+        if (str[i] != str[length] ) {
+            console.log(str[i], str[length])
+            palindrome = false
+            break
+        }
+        if (str[i] == str[length]){
+            console.log(str[i], str[length])
+            i++
+            length--
+        }
+    }
+    console.log(palindrome)
+}
+checkPal("racecar")
