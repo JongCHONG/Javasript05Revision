@@ -61,3 +61,26 @@ function checkPal(str) {
     console.log(palindrome)
 }
 checkPal("racecar")
+saut2ligne()
+
+//04 - Swap
+console.log("03 - Swap \n")
+
+function swap(str) {
+    var result = 0
+    var final  = ""
+    for (var i = 0; i < str.length; i++) {
+        if (str.charCodeAt(i) > 64 && str.charCodeAt(i) < 91) {
+            result = str.charCodeAt(i) + 32
+            final = final + String.fromCharCode(result)
+        } else if (str.charCodeAt(i) > 96 && str.charCodeAt(i) < 123) {
+            result = str.charCodeAt(i) - 32
+            final = final + String.fromCharCode(result)
+        } else {
+            final = final + str[i]
+        }
+    }
+    console.log(final)
+}
+swap("Hello World")
+saut2ligne()
