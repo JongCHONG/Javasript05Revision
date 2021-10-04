@@ -99,8 +99,61 @@ function makeItSpongeBob(str) {
         } else {
             bob = bob + mini[i]
         }
-        console.log(i)
     }
     console.log(bob)
 }
-makeItSpongeBob("jZieE")
+makeItSpongeBob("JzfizjmafmZZFZzzefez")
+saut2ligne()
+
+//Bonus II
+console.log("Bonus II \n")
+
+//Bonus III
+console.log("Bonus III \n")
+
+function countEach(str) {
+    var counto = 0
+    var countx = 0
+    var countX = 0
+    var countO = 0
+    var error = false
+    
+    for (var i = 0; i < str.length; i++) {
+        if (str.charCodeAt(i) != 79 &&
+            str.charCodeAt(i) != 88 &&
+            str.charCodeAt(i) != 111 &&
+            str.charCodeAt(i) != 120) {
+                console.log("Error")
+                error = true
+                break
+            } else {
+                if (str[i] == "o") {
+                    counto++
+                }
+                if (str[i] == "x") {
+                    countx++
+                }
+                if (str[i] == "O") {
+                    countO++
+                }
+                if (str[i] == "X") {
+                    countX++
+                }
+            }
+    }
+    if (error == false) {
+        console.log(counto + " de \"o\"")
+        console.log(countx  + " de \"x\"")
+        if (counto == countx) {
+            console.log(true + " x = o")
+        } else {
+            console.log(false + " x != o")
+        }
+        console.log(countO + " de \"O\"")
+        console.log(countX  + " de \"X\"")
+    }
+    saut2ligne()
+}
+countEach("xxxooooxAoxXO")
+countEach("xoxoo")
+saut2ligne()
