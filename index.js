@@ -94,7 +94,7 @@ function makeItSpongeBob(str) {
     var bob = ""
 
     for (var i = 0; i < mini.length; i++) {
-        if (i % 2 == 0){
+        if (i % 2 === 0){
             bob = bob + mini[i].toUpperCase()
         } else {
             bob = bob + mini[i]
@@ -102,7 +102,7 @@ function makeItSpongeBob(str) {
     }
     console.log(bob)
 }
-makeItSpongeBob("JzfizjmafmZZFZzzefez")
+makeItSpongeBob("Javascript is easy")
 saut2ligne()
 
 //Bonus II
