@@ -108,6 +108,14 @@ saut2ligne()
 //Bonus II
 console.log("Bonus II \n")
 
+function sortLetters(str) {
+    var uno = str.split("")
+    uno = uno.sort().join("")
+    console.log(uno)
+}
+sortLetters("konAeBxiCoD")
+saut2ligne()
+
 //Bonus III
 console.log("Bonus III \n")
 
@@ -154,6 +162,6 @@ function countEach(str) {
     }
     saut2ligne()
 }
-countEach("xxxooooxAoxXO")
+countEach("xxxoooox1oxXO")
 countEach("xoxoo")
 saut2ligne()
